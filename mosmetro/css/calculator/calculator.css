@@ -1,0 +1,153 @@
+/* calculator.css - стили для калькулятора */
+
+calculator {
+    display: block;
+    max-width: 40rem;
+    margin: 2rem auto;
+    background: #424242;
+    border-radius: 2rem;
+    padding: 2rem;
+    font-family: 'Moscow Sans', 'sans-serif';
+}
+
+#result {
+    background: #333333;
+    color: #ffffff;
+    font-size: 4.8rem;
+    font-style: bold;
+    text-align: right;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1.2rem;
+    min-height: 8rem;
+}
+
+.numpad {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.numpad > div {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.numpad button {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 1.2rem;
+    cursor: pointer;
+    background: #535353;
+    color: #ffffff;
+    transition: all 0.1s ease;
+}
+
+/* Стили для кнопки 0 */
+#btn_digit_0 {
+    aspect-ratio: 2 / 1;
+    flex: 2;
+}
+
+/* Стили для кнопок операций */
+#btn_op_clear {
+    background: #f44336;
+}
+
+#btn_op_equal {
+    background: #4caf50;
+}
+
+/* Стили для арифметических операций */
+#btn_op_div,
+#btn_op_mult,
+#btn_op_minus,
+#btn_op_plus {
+    background: #ff9800;
+}
+
+/* Стили для кнопки смены знака и процента */
+#btn_op_sign,
+#btn_op_percent {
+    background: #607d8b;
+}
+
+/* ========== НОВЫЕ СТИЛИ ДЛЯ ДОПОЛНИТЕЛЬНЫХ КНОПОК ========== */
+
+/* Backspace (⌫) */
+#btn_op_backspace {
+    background: #ff5722;
+    font-size: 2.4rem;
+}
+
+/* Квадратный корень (√), квадрат (x²), факториал (x!) */
+#btn_op_sqrt,
+#btn_op_square,
+#btn_op_factorial {
+    background: #2196f3;
+}
+
+/* Три нуля (000) */
+#btn_op_000 {
+    background: #009688;
+    font-size: 1.8rem;
+}
+
+/* Кнопки памяти (M+, M-, MR) */
+#btn_op_madd,
+#btn_op_msub,
+#btn_op_mr {
+    background: #9c27b0;
+}
+
+/* Обратное число (1/x) */
+#btn_op_reciprocal {
+    background: #e91e63;
+}
+
+/* Кнопки смены цвета */
+#btn_op_bgcolor {
+    background: #00bcd4;
+}
+
+#btn_op_dispcolor {
+    background: #00acc1;
+}
+
+/* Эффект нажатия */
+.numpad button:active {
+    transform: scale(0.95);
+}
+
+/* Дополнительный эффект при наведении */
+.numpad button:hover {
+    filter: brightness(1.1);
+}
+
+/* Адаптив для мобильных устройств */
+@media (max-width: 480px) {
+    calculator {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+    
+    #result {
+        font-size: 3.2rem;
+        padding: 1.5rem 1rem;
+    }
+    
+    .numpad button {
+        font-size: 1.6rem;
+    }
+    
+    #btn_op_backspace {
+        font-size: 2rem;
+    }
+    
+    #btn_op_000 {
+        font-size: 1.4rem;
+    }
+}
