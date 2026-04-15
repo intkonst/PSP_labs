@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "MoscowSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/mosmetro/fonts/Moscow_Sans/MoscowSans-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "MoscowSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/mosmetro/fonts/Moscow_Sans/MoscowSansRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "MoscowSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/mosmetro/fonts/Moscow_Sans/MoscowSans-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "MoscowSans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/mosmetro/fonts/Moscow_Sans/MoscowSans-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "MoscowSans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/mosmetro/fonts/Moscow_Sans/MoscowSans-Extrabold.otf") format("opentype");
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0 auto;
+}
